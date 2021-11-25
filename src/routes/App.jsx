@@ -20,7 +20,7 @@ const App = () => {
 	const initialState = useInitialState();
 	return (
 		<AppContext.Provider value={initialState}>
-		<BrowserRouter>
+		<BrowserRouter basename="/platzi-react-shop">
 			<Layout>
 				<Switch>
 					<Route exact path="/" component={Home} />
